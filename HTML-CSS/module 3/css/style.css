@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.page-wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+.header-wrapper {
+    height: 190px;
+    font-size: 0;
+}
+
+.menu {
+    list-style: none;
+    padding-top: 75px;
+    padding-left: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+    text-align: center;      
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #626262;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    line-height: 24px;
+    height: 42px;
+    font-weight: 400;
+    width: 112.5px;
+}
+
+.item-link:hover {
+    color: #03a9f4;
+    text-decoration: none;
+} 
+
+.long-item {
+    padding-left: 90px;
+}
+
+.short-item1 {
+    padding-left: 55px;
+}
+
+.short-item2 {
+    padding-left: 30px;
+}
+
+main {
+    font-size: 0;
+}
+
+.left-card,
+.right-card {
+    display: inline-block;
+    font-size: 16px;
+    width: 420px;
+}
+
+.right-card {
+    margin-left: 60px;
+}
+
+.img-wrapper {
+    height: 280px;
+}
+
+.card-item {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    font-family: "Ubuntu Light";
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 30px;
+    height: 14px;
+}
+
+.card-name {
+    font-family: "Playfair Display";
+    font-size: 30px;
+    color: #626262;
+    font-weight: 400;
+    height: 30px;
+    padding-top: 30px;
+    
+}
+
+.card-description {
+    font-family: "Playfair Display";
+    font-size: 14px;
+    color: #626262;
+    text-align: justify;
+    line-height: 24px;
+    font-weight: 400;
+    padding-top: 38px;
+}
+
+.second-cardline,
+.third-cardline {
+    padding-top: 130px;
+}
+
+.footer-wrapper {
+    height: 180px;
+    text-align: center;
+}
+
+.button-box {
+    padding-top: 52px;
+}
+
+.load-button {
+    color: #626262;
+    width: 164px;
+    height: 60px;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid #626262;
+    line-height: 24px;
+    font-weight: 400;
+}
