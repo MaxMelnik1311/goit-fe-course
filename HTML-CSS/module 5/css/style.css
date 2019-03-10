@@ -97,7 +97,7 @@
 
 
 .slider-button {
-    top: 225px;
+    top: 315px;
     width: 104px;
     height: 104px;
     background-color: rgba(26, 188, 156, .61);
@@ -111,18 +111,18 @@
 
 .left-button {
     position: absolute;
-    left: 245px;  
+    left: 375px;  
 }
 
 .right-button {
     position: absolute;
-    right: 245px; 
+    right: 375px; 
 }
 
 .slide-text {
     position: absolute;
-    top: 219px;
-    left: 430px;
+    top: 309px;
+    left: 560px;
     margin: auto;
 }
 
