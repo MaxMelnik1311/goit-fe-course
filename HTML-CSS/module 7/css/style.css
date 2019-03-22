@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Droid Serif";
+    font-weight: 400;
+    font-style: italic;
+    src: url(fonts/DroidSerif-Italic-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/roboto-slab-v8-latin-regular.woff2) format('woff2'),
+        url(fonts/roboto-slab-v8-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url(fonts/montserrat-v12-latin-regular.woff2) format('woff2')
+        url(fonts/montserrat-v12-latin-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url(fonts/montserrat-v12-latin-700.woff2) format('woff2'),
+        url(fonts/montserrat-v12-latin-700.woff) format('woff');
+}
+
+.header-wrp, .services {
+    width: 940px;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.menu {
+    display: flex;
+    width: 480px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    list-style: none;
+    height: 15px;
+    padding-top: 4px;
+}
+
+.item-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #222222;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+.item-link:hover {
+    color: #fed136;
+}
+
+.title-services {
+    padding-top: 110px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: #222222;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #777777;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 77px;
+    font-family: "Droid Serif";
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-circle {
+    border-radius: 33px;
+    background-color: #ffffff;
+    border: 3px solid #fed136;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-name {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.service-description {
+    width: 290px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 116px;
+    font-family: "Roboto Slab";
+}
+
+
+.feedback {
+    background-color: #222222;
+    width: 100%;
+    height: 676px;
+    position: relative;
+}
+
+.bg-image {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.feedback-header {
+    position: absolute;
+    width: 940px;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.title-feedback {
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+.contact-form {
+    position: absolute;
+    width: 940px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 255px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form-wrp {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    border-radius: 3px;
+    padding: 0px 20px;
+    border: none;
+    height: 52px;
+
+}
+
+.contact-textarea {
+    border-radius: 4px;
+    padding: 18px 20px;
+    height: 212px;
+}
+
+.contact-input,
+.contact-textarea {
+    box-sizing: border-box;
+    margin-bottom: 28px;
+    width: 457px;
+    display: block;
+    outline: 4px solid transparent;
+    outline-offset: -2px;
+    transition: outline-color 0.1s;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-submit {
+    border-radius: 3px;
+    background-color: #fed136;
+    width: 240px;
+    height: 65px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid,
+input[name="name"]:focus:invalid {
+  outline-color: red;
+  transition: outline-color 5s;
+}
+
+input[type="email"]:focus:valid,
+textarea[name="body"]:focus:valid,
+input[name="name"]:focus:valid {
+  outline-color: green;
+  transition: outline-color .4s;
+}
