@@ -62,11 +62,12 @@
         list-style: none;
         width: 90px;
         height: 32px;
+        border: 2px solid transparent;
+        border-radius: 20px;
     }
 
     .verify-way:hover {
-        border: 2px solid #fff;
-        border-radius: 20px;
+        border-color: #fff;
     }
 
     .way-link {
