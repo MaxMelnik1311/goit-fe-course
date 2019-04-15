@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --col: 80px;
+    --g: 20px;
+}
+
+/* -----------------------------------fonts library------------------------------------------------ */
+
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('fonts/kaushan-script-v7-latin-regular.woff2') format('woff2'),
+         url('fonts/kaushan-script-v7-latin-regular.woff') format('woff'); 
+}
+
+.pre-title {
+    font-family: 'Kaushan Script';
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+        url('fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+
+.site-logo, .title, .btn {
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+        url('fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+
+.item-link, .service-name, .dev-name, .footer-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.service-name, .dev-name, .footer-text {
+    font-size: 14px;
+    color: #333333;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v19-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v19-latin-regular.woff') format('woff'); 
+}
+
+.service-description, .subtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('../fonts/roboto-v19-latin-italic.woff2') format('woff2'),
+         url('../fonts/roboto-v19-latin-italic.woff') format('woff');
+}
+
+.dev-profession {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+         url('../fonts/roboto-v19-latin-300italic.woff2') format('woff2'),
+         url('../fonts/roboto-v19-latin-300italic.woff') format('woff');
+}
+
+/* -----------------------------------fonts library ending------------------------------------------------ */
+
+.container-fluid {
+    background-image: url(../image/bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .container-fluid {
+        background-image: url(../image/bg-image@2x.png);
+    }
+}
+
+.container {
+    width: calc(var(--col) * 12 + var(--g) * 11 + 20px);
+    margin: auto;
+}
+
+/* -----------------------------------------first container begin----------------------------------------- */
+
+.site-nav {
+    padding-top: 3vh;
+    padding-bottom: 15vh;
+}
+
+.nav-menu {
+    width: calc(var(--col) * 6 + var(--g) * 6);
+}
+
+.site-nav, .nav-menu, .services-list, .team-gallery, .dev-networks, .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.site-logo, .menu-item, .item-link, .icon-item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.item-link, .title, .btn, .service-name, .dev-name {
+    text-transform: uppercase;
+}
+
+.site-logo, .item-link, .pre-title--main, .title--main {
+    color: #fff;
+}
+
+.site-logo {
+    font-size: 30px;
+}
+
+.item-link {
+    font-size: 14px;
+}
+
+.menu-item {
+    height: 27px;
+    padding-top: 13px;
+}
+
+.item-link::after {
+    display: block;
+    content: "";
+    height: 11px;
+    width: 0px;
+    background: transparent;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-bottom: 3px solid #fce38a;;
+}
+
+.item-link:hover::after {
+    width: 100%;
+}
+
+.link-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.pre-title, .title, .subtitle, .dev-name, .dev-profession, .btn-top {
+    text-align: center;
+}
+
+.pre-title--main {
+    padding-bottom: 2.5vh;
+    font-size: 72px;
+}
+
+.title--main {
+    padding-bottom: 10vh;
+    font-size: 150px;
+    line-height: 140px;
+    width: calc(var(--col) * 8 + var(--g) * 9);
+    margin: auto;
+}
+
+.btn {
+    height: calc(var(--g) * 2); 
+    width: calc(var(--col) * 2);
+    border: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+/* -----------------------------------------first container----------------------------------------- */
+/* -----------------------------------------second container----------------------------------------- */
+
+.pre-title--low {
+    font-size: 24px;
+    color: #333333;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.title--low {
+    font-size: 24px;
+    color: #333333;
+}
+
+.title--low::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 40px auto;
+    background-color: #f38181;
+}
+
+.services-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.service-card, .dev-card {
+    width: calc(var(--col) * 4 + var(--g) * 3);
+}
+
+.service-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px 0 70px 0;
+}
+
+.service-image {
+    width: var(--col);
+}
+
+.service-icon {
+    padding-left: var(--g);
+    padding-top: 3px;
+}
+
+.service-info {
+    width: calc(var(--col) * 3 + var(--g) * 3);
+}
+
+.service-name {
+    padding-bottom: 10px;
+}
+
+.service-description {
+    padding-right: var(--g);
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+/* -----------------------------------------second container----------------------------------------- */
+/* -----------------------------------------third container----------------------------------------- */
+
+.subtitle {
+    width: calc(var(--col) * 10 + var(--g) * 8);
+    margin: auto;
+    padding-bottom: 90px;
+}
+
+.dev-card {
+    height: 624px;
+    position: relative;
+}
+
+.dev-photo, .photo-overlay {
+    height: calc(var(--col) *6 - 10px);
+    width: calc(var(--col) * 4 + var(--g) * 3);
+    overflow: hidden;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 138, 138, .90)), to(rgba(229, 209, 132, .90)));
+    background: -webkit-linear-gradient(top, rgba(239, 138, 138, .90), rgba(229, 209, 132, .90));
+    background: -o-linear-gradient(top, rgba(239, 138, 138, .90), rgba(229, 209, 132, .90));
+    background: linear-gradient(to bottom, rgba(239, 138, 138, .90), rgba(229, 209, 132, .90));
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.dev-photo:hover .photo-overlay{
+    opacity: 1;
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px #95e1d3;
+            box-shadow: 10px 10px #95e1d3;  
+}
+
+.dev-networks {
+    position: absolute;
+    top: 207px;
+    left: var(--col);
+    width: 223px;
+    height: 55px;
+}
+
+.network-link {
+    background-color: #f38181;
+}
+
+.ico {
+    width: 55px;
+    height: 55px;
+    fill: #fce38a;
+}
+
+.network-link:hover {
+    background-color: #fff;
+}
+
+.network-link:hover .ico {
+    fill: #f38181;
+}
+
+.dev-name {
+    padding: 30px 0 15px 0;
+}
+
+/* -----------------------------------------third container----------------------------------------- */
+/* -----------------------------------------fourth container----------------------------------------- */
+
+.footer {
+    height: 62px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer-sign {
+    color: #f38181;
+}
+
+.container--footer::before {
+    display: block;
+    content: "";
+    width: 1200px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 0px;
+    clear: both;
+}
+
+form {
+    font-size: 0;
+    vertical-align: middle;
+}
+  
+input {
+    font-size: 16px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    vertical-align: middle;
+}
+  
+input[type="email"] {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 1rem;
+}
+  
+input[type="submit"] {
+    width: 152px;
+    height: 40px;
+    background: #95e1d3;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+  
+input::-webkit-input-placeholder {
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+  
+input:-ms-input-placeholder {
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+  
+input::-ms-input-placeholder {
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+  
+input::placeholder {
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
