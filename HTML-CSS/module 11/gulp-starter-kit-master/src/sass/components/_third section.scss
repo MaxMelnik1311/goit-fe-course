@@ -1,0 +1,86 @@
+.subtitle {
+    width: 960px;
+    margin: auto;
+    padding-bottom: 90px;
+    text-align: center;
+    @extend %roboto;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-4;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dev-card {
+    height: 624px;
+    position: relative;
+}
+
+.dev-photo, .photo-overlay {
+    height: 470px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(to bottom, $color-3, $color-1);
+    transition: all 0.2s linear;
+}
+
+.dev-photo:hover .photo-overlay{
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $color-5;  
+}
+
+.dev-networks {
+    position: absolute;
+    top: 207px;
+    left: $column;
+    width: 223px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.network-link {
+    background-color: $color-3;
+}
+
+.ico {
+    width: 55px;
+    height: 55px;
+    fill: $color-1;
+}
+
+.network-link:hover {
+    background-color: $white;
+}
+
+.network-link:hover .ico {
+    fill: $color-3;
+}
+
+.dev-name {
+    padding: 30px 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %montserrat;
+    font-size: 14px;
+    color: $color-2;
+    margin: 0;
+}
+
+.dev-profession {
+    text-align: center;
+    @extend %roboto-italic;
+    color: $color-4;
+    margin: 0;
+}

@@ -1,0 +1,99 @@
+.navigation {
+    padding-top: 3vh;
+    padding-bottom: 15vh;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        list-style: none;
+        text-decoration: none;
+        color: $white;
+        font-size: 30px;
+        @extend %montserrat-bold;
+    }
+
+    &__menu {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
+
+.menu-item {
+    height: 27px;
+    padding-top: 13px;
+    list-style: none;
+
+    &__link {
+        text-transform: uppercase;
+        color: $white;
+        text-decoration: none;
+        font-size: 14px;
+        @extend %montserrat;
+    }
+
+    &__link::after {
+        display: block;
+        content: "";
+        height: 11px;
+        width: 0px;
+        background: transparent;
+        transition: all 0.2s linear;
+        border-bottom: 3px solid $color-1;
+    }
+
+    &__link:hover::after{
+        width: 100%;
+    }
+
+    &__link:hover {
+        color: $color-1;
+    }
+
+    &__link-icon {
+        fill: $white;
+        width: $gutter;
+        height: $gutter;
+    }
+}
+
+.pre-title {
+    text-align: center;
+    margin: 0;
+}
+
+.pre-title--main {
+    padding-bottom: 2.5vh;
+    @include kaushan(72px);
+    color: $white;
+}
+
+.title {
+    @extend %montserrat-bold;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title--main {
+    padding-bottom: 10vh;
+    font-size: 150px;
+    line-height: 140px;
+    width: 820px;
+    color: $white;
+}
+
+.btn-top {
+    text-align: center;
+}
+
+.btn {
+    height: 40px; 
+    width: 160px;
+    border: 3px solid $white;
+    background: transparent;
+    color: $white;
+    @extend %montserrat-bold;
+    text-transform: uppercase;
+}

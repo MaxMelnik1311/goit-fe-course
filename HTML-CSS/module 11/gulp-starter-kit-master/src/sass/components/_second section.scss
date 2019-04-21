@@ -1,0 +1,62 @@
+.pre-title--low {
+    @include kaushan(24px);
+    color: $color-2;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.title--low {
+    font-size: 24px;
+    color: $color-2;
+}
+
+.title--low::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 40px auto;
+    background-color: $color-3;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.service-card {
+    width: 380px;
+    display: flex;
+    padding: 25px 0 70px 0;
+
+    &__image {
+        width: $column;
+
+        &__icon {
+            padding-left: $gutter;
+            padding-top: 3px;
+        }
+    }
+
+    &__info {
+        width: 300px;
+    }
+}
+
+.service-name {
+    padding-bottom: 10px;
+    @extend %montserrat;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.service-description {
+    padding-right: $gutter;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-4;
+    @extend %roboto;
+    margin: 0;
+}

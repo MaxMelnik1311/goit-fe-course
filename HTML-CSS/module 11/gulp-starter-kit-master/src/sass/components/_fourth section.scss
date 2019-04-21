@@ -1,0 +1,57 @@
+.footer {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-sign {
+    color: $color-3;
+}
+
+.container--footer::before {
+    display: block;
+    content: "";
+    width: 1200px;
+    height: 1px;
+    background-color: $color-4;
+    margin: 0px;
+    clear: both;
+}
+
+form {
+    font-size: 0;
+    vertical-align: middle;
+}
+  
+input {
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    vertical-align: middle;
+}
+  
+input[type="email"] {
+    width: 230px;
+    height: 40px;
+    border: 1px solid $color-4;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+  
+input[type="submit"] {
+    width: 152px;
+    height: 40px;
+    background: $color-5;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    @extend %montserrat-bold;
+    font-size: 14px;
+}
+    
+input::placeholder {
+    color: $color-4;
+    @extend %roboto-thin;
+    font-size: 15px;
+}

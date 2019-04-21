@@ -1,0 +1,16 @@
+.banner {
+    width: 100vw;
+    height: 100vh;
+}
+
+.first-section {
+    position: relative;
+}
+
+.main-info {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
